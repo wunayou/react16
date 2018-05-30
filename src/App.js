@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Mapreact from './component/child/map'
+import Mapreact from './component/ref'
 class App extends Component {
   render() {
     return (
