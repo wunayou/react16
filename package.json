@@ -3,9 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "ejs-mate": "^2.3.0",
+    "morgan": "^1.9.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "winston": "^2.4.2",
+    "winston-daily-rotate-file": "^3.2.1"
   },
   "scripts": {
     "start": "react-scripts start",
