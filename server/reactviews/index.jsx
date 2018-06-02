@@ -12,11 +12,16 @@ function countTo(n: number): string {
 }
 
 class Index extends React.Component {
+
+  handleClick(){
+    
+    alert(3)
+  }
   render() {
     return (
       <Layout title={this.props.title}>
         <h1>{this.props.title}</h1>
-        <p>Welcome to {this.props.title}</p>
+        <p onClick={this.handleClick.bind(this)}>Welcome to {this.props.title}</p>
         <p>
           I can count to 10:
           {this.props.foo.bar}
