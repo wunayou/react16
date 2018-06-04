@@ -5,6 +5,8 @@
   "dependencies": {
     "cookie-parser": "^1.4.3",
     "ejs-mate": "^2.3.0",
+    "errorhandler": "^1.5.0",
+    "express-react-views": "^0.10.5",
     "express-session": "^1.15.6",
     "glob": "^7.1.2",
     "koa": "^2.5.1",
