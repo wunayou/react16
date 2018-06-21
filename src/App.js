@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Mapreact from './component/ref'
+import Appcontext from './component/context/app.js'
 class App extends Component {
   render() {
     return (
@@ -15,6 +16,7 @@ class App extends Component {
         </p>
 
         <Mapreact/>
+        <Appcontext/>
       </div>
     );
   }
