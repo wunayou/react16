@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Mapreact from './component/ref'
+import Mapreact from './component/iframe'
 import Appcontext from './component/context/app.js'
 class App extends Component {
   render() {
@@ -15,7 +15,6 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <Mapreact/>
-        <Appcontext/>
       </div>
     );
   }

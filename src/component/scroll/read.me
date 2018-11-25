@@ -1,0 +1,39 @@
+
+### scroll
+
+1、 合成事件 
+2、 onscroll事件和onwheel事件的区别
+3、 如何隐藏浏览器默认的滚轮样式
+
+### 合成事件 
+
+
+### onscroll事件和onwheel事件的区别
+#### onscroll
+onscroll 在滚动条滚动的时候被触发。
+
+onscroll 触发可以有多种方式，只要可以让滚动条发生滚动（X方向或Y方向）
+
+鼠标滚轮
+
+按 pageUp，pageDown，方向上键，方向下键，空格键 （还有其他？）
+
+使用特定的滚动函数，如 scrollTo，scrollBy，scrollByLines, scrollByPages
+
+当滚动条不存在（容器的内容小于容器的大小）
+
+手动隐藏（添加样式 overflow:hidden）
+
+onscroll 就不会被触发
+
+#### onwheel
+onwheel 在鼠标滚轮滚动的时候被触发
+
+因为滚轮可以控制页面的滚动，所以在使用滚轮时，onwheel事件先被触发，滚动条滚动，接着是onscroll事件
+
+如果想检测每次滚动的增量，应该查看 deltaX,deltaY,deltaZ
+
+WheelEvent 中指出 ：在onwheel中，增量的值不一定要对应到滚动条改变的值，滚轮滚动的方向不一定是滚动条的方向，但我们可以从 deltaX,deltaY 知道滚轮滚动的具体方向（向上or向下）
+
+
+### 如何隐藏浏览器默认的滚轮样式
